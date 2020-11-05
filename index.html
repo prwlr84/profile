@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Open Component Challlenge</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="card" id="card1">
+      <img class="avatar" src="images/rs.jpg" alt="">
+      <div class="content">
+        <h1>Antal Bako</h1>
+        <h3>Programmer</h3>
+        <p>Hey, I am Antal,<br> the Student of Le Wagon <br>and your future full stack developer</p>
+      </div>
+      <div class="nav">
+        <i class="fas fa-chevron-left" id="left1"></i>
+        <i class="fas fa-shuttle-van"></i>
+        <i class="fas fa-shuttle-van"></i>
+        <i class="fas fa-shuttle-van"></i>
+        <i class="fas fa-chevron-right" id="right1"></i>
+      </div>
+    </div>
+    <!-- Code your component here -->
+    <div class="card off" id="card2">
+      <div class="icons">
+        <ul>
+          <li><a href="https://github.com/prwlr84"><i class="fab fa-github fa-5x"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/antalbako/"><i class="fab fa-linkedin fa-5x"></i></a></li>
+          <li><a href="https://www.strava.com/athletes/21878225"><i class="fab fa-strava fa-5x"></i>/<a></li>
+        </ul>
+      </div>
+      <div class="nav">
+        <i class="fas fa-chevron-left" id="left2"></i>
+        <i class="fas fa-shuttle-van"></i>
+        <i class="fas fa-shuttle-van"></i>
+        <i class="fas fa-shuttle-van"></i>
+        <i class="fas fa-chevron-right" id="right2"></i>
+      </div>
+    </div>
+
+  </body>
+  <script>
+    document.getElementById("left1").addEventListener("click", function() {
+      document.getElementById("card1").classList.toggle('off')
+      document.getElementById("card2").classList.toggle('off')
+    });
+    document.getElementById("right1").addEventListener("click", function() {
+      document.getElementById("card1").classList.toggle('off')
+      document.getElementById("card2").classList.toggle('off')
+    });
+    document.getElementById("left2").addEventListener("click", function() {
+      document.getElementById("card1").classList.toggle('off')
+      document.getElementById("card2").classList.toggle('off')
+    });
+    document.getElementById("right2").addEventListener("click", function() {
+      document.getElementById("card1").classList.toggle('off')
+      document.getElementById("card2").classList.toggle('off')
+    });
+  </script>
+</html>
